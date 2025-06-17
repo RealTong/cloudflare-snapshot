@@ -1,0 +1,19 @@
+{
+  "name": "cloudflare-tv-snapshot",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "test": "vitest",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@cloudflare/puppeteer": "^1.0.2",
+    "@cloudflare/vitest-pool-workers": "^0.8.18",
+    "hono": "^4.7.7",
+    "vitest": "^3.1.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250419.0",
+    "wrangler": "^4.4.0"
+  }
+}
